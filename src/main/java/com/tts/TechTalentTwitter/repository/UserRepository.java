@@ -7,5 +7,5 @@ import com.tts.TechTalentTwitter.model.User;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {
-
+	User findByUsername(String username);
 }
